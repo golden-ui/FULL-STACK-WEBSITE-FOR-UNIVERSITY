@@ -1,0 +1,155 @@
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .top-bar {
+      background-color: #002b7f;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+      font-size: 14px;
+    }
+
+    .main-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      height: 60px;
+    }
+
+    .rtmssu-name {
+      font-size: 2rem;
+      font-weight: 700;
+      margin: 10px 20px;
+      flex-grow: 1;
+      line-height: 1.3;
+    }
+
+    .red {
+      color: #F44336;
+    }
+
+    .blue {
+      color: #1565C0;
+    }
+
+    .nav {
+      display: flex;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #002b7f;
+      font-weight: 500;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(to right, #e3f2fd, #fce4ec);
+    }
+
+    .highlight-yellow {
+      color: #f5b400;
+    }
+
+    .highlight-red {
+      color: #d32f2f;
+    }
+
+    .tab-container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 10px;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      margin-bottom: 20px;
+    }
+
+    .tabs label {
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    .tab-content-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .tab-content {
+      display: none;
+      text-align: center;
+    }
+
+    #student-tab:checked ~ .tabs + .tab-content-container #student,
+    #alumni-tab:checked ~ .tabs + .tab-content-container #alumni {
+      display: block;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #002b7f;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .enquire-btn {
+      position: fixed;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: black;
+      color: white;
+      padding: 10px;
+      writing-mode: vertical-rl;
+      cursor: pointer;
+    }
+
+    .cookie-popup {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #fff;
+      padding: 15px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      border-radius: 10px;
+    }
+
+    .cookie-popup button {
+      margin-top: 10px;
+      background-color: #002b7f;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+  

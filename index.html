@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student & Alumni Interaction Portal</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="INDEX.CSS">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <!-- Contact Information -->
+        <span>📞 +91 22 4978 0588</span>
+        <!-- Contact Link -->
+        <span>✉️ Contact</span>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <!-- University Logo -->
+        <img src="MSSULogo.png" alt="University Logo" class="logo">
+        <!-- University Name -->
+        <p class="rtmssu-name">
+            <span class="red">RATAN TATA</span><br>
+            <span class="blue">MAHARASHTRA STATE</span><br>
+            <span class="red">SKILLS UNIVERSITY</span>
+        </p>
+        <!-- Navigation Menu -->
+        <nav class="nav">
+            <a href="https://mssu.ac.in/">About</a>
+            <a href="STUDENTSCORNER.HTML">Student Corner</a>
+            <a href="OURCENTERS.HTML">Centres</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <!-- Main Heading -->
+            <h2>Maharashtra’s First <span class="highlight-yellow">Skills University</span><br>
+                by <span class="highlight-red">Government of Maharashtra</span>
+            </h2>
+            <!-- Sub Heading -->
+            <p>Empowering students & alumni through industry-aligned programs and opportunities.</p>
+        </div>
+    </section>
+
+    <!-- Tabbed Content Section -->
+    <main class="tab-container">
+        <!-- Radio buttons for tab selection -->
+        <input type="radio" name="tab" id="student-tab" checked>
+        <input type="radio" name="tab" id="alumni-tab">
+
+        <!-- Tabs -->
+        <div class="tabs">
+            <label for="student-tab">Student</label>
+            <label for="alumni-tab">Alumni</label>
+        </div>
+
+        <!-- Tab Content -->
+        <section class="tab-content-container">
+
+            <!-- Student Tab Content -->
+            <div class="tab-content" id="student">
+                <h2>Student Portal</h2>
+                <p>Connect with academic and career resources.</p>
+                <a href="studentindex.html" class="btn">Login as Student</a>
+            </div>
+
+            <!-- Alumni Tab Content -->
+            <div class="tab-content" id="alumni">
+                <h2>Alumni Portal</h2>
+                <p>Reconnect, mentor, and contribute back to your university.</p>
+                <a href="alumniindex.html" class="btn">Login as Alumni</a>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Floating "Enquire Now" Button -->
+    <div class="enquire-btn">Enquire Now</div>
+
+    <!-- Cookie Consent Popup -->
+    <div class="cookie-popup" id="cookiePopup">
+        <p>We use cookies to ensure the best experience on our site.</p>
+        <button onclick="document.getElementById('cookiePopup').style.display='none'">Ok, got it!</button>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Login - Interaction Portal</title>
+
+    <!-- Custom Styles -->
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styling */
+        .header {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .header img {
+            height: 60px; /* Logo height */
+        }
+
+        .header h1 {
+            margin: 10px 0 5px;
+            font-size: 20px;
+        }
+
+        /* University Name Styling */
+        .header .title {
+            color: red;
+        }
+
+        .header .state {
+            color: blue;
+        }
+
+        .header .university {
+            color: red;
+        }
+
+        /* Container Styling */
+        .container {
+            max-width: 400px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Label Styling */
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        /* Input Field Styling */
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Submit Button Styling */
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background: #6200ea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background: #3700b3;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <!-- University Logo -->
+        <img src="MSSULogo.png" alt="Logo">
+        <!-- Portal Title -->
+        <h1>STUDENT AND ALUMNI INTERACTION PORTAL</h1>
+        <!-- University Details -->
+        <div class="title"><B>RATAN TATA</B></div>
+        <div class="state"><B>MAHARASHTRA STATE</B></div>
+        <div class="university"><B>SKILLS UNIVERSITY</B></div>
+    </div>
+
+    <!-- Login Container -->
+    <div class="container">
+        <!-- Login Heading -->
+        <h2>Student Login</h2>
+        <!-- Login Form -->
+        <form action="/student_dashboard" method="POST">
+            <!-- Student ID -->
+            <label for="studentId">Student ID</label>
+            <input type="text" id="studentId" name="studentId" required>
+
+            <!-- Password -->
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+</body>
+
+</html>
